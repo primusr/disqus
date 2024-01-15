@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" id="Pdark">
+
+<head itemscope="itemscope" itemtype="https://schema.org/WebSite">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Copyright James R Meyer 2012-2020, all rights reserved."-->
+	<meta name="author" content="Logic and Language">
+	<link rel="index" href="https://www.jamesrmeyer.com/index">
+	<link rel="icon" href="/favicon.ico">
+	<script>/* if javascript enabled add on the hasJS class*/ document.documentElement.className = "hasJS";</script>
+	<link rel="canonical" href="https://www.jamesrmeyer.com/otherstuff/dark-mode-demo/dark-mode-demo-disqus" />
+	<title itemprop="name">Basic Dark mode Demo page with Disqus</title>
+	<meta name="description"
+		content="A demonstration page of an implementation of a fully functioning dark mode switch on a website with Disqus comments.">
+	<script>
+		var disqus_config = function () {
+			this.page.url = "https://primusr.notion.site/primusr/Bulletin-Board-Updated-in-Real-Time-760acf732f9246d690bc4d721550c73f";
+			this.page.title = 'Student Lounge';
+		};
+	</script>
+
+	<link rel="stylesheet" media="screen" type="text/css" href="dark-mode-demo-disqus.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+
+	<script>
+		var Gtheme; // Global variable for theme
+
+		function SetTheme() {
+			// get local storage; if it does not exist then Gtheme is set as 'system';
+			if (!(Gtheme = localStorage.getItem('LStheme'))) { Gtheme = 'system'; }
+			switch (Gtheme) {
+				case 'system': // Do nothing, leave the Pdark id as default to implementing system setting as light or dark
+					break;
+				case 'light':
+					document.documentElement.removeAttribute('id'); //remove the Pdark id from the HTML tag
+					break;
+				case 'dark':
+					document.documentElement.setAttribute('id', 'Dark'); //set the id to dark on the HTML tag
+					break;
+			}
+		}
+
+		SetTheme(); // run the setup function
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+
+	<div id="disqus_thread">&nbsp;</div>
+
+	<script>
+		var disqus_config = function () {
+			this.page.url = "https://primusr.notion.site/primusr/Bulletin-Board-Updated-in-Real-Time-760acf732f9246d690bc4d721550c73f"
+			//this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+		};
+
+		(function () { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://itstudentlounge.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+
+		})();
+	</script>
+
+
+
+
+	<script src="dark-mode-demo-disqus.js"></script>
+</div>
+</body>
+
+</html>

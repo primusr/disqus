@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* Basic Styling */
+.hasJS .noscript {
+	display: none;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn {
+	font-size: 1.2em;
+	padding: 0.3em 0.7em;
+}
+
+.check {
+	font-size: 1.35em;
+	padding: 0.3em 0.7em;
+	border: 1px solid red;
+}
+
+.spaced {
+	padding: 1em;
+}
+
+.hideTip {
+	display: none !important;
+}
+
+#CmtBox {
+	width: auto;
+	padding: 0.63em;
+	margin: 1em 0.18em 0.9em 0.18em;
+	border: 0.125em solid green;
+	background: #fffdf5;
+	color: #1d2565;
+}
+
+a {
+	color: blue;
+}
+
+/* for reset button */
+.grayed{
+	opacity:0.5;
+	background:hsl(0, 0%, 50%) !important;
+}
+
+/* To demonstrate light mode */
+body {
+	--primary-color: #14172b;
+	--secondary-color: #f6f4ec;
+}
+
+body {
+	color: #1F2022;
+	background: #F1EDE5;
+}
+
+h1 {
+	color: #1d2565;
+	background: #fff7c9;
+}
+
+.text {
+	color: var(--primary-color);
+	background: var(--secondary-color);
+}
+
+.btn {
+	background: #ccdbff;
+}
+
+.check {
+	color: #1d2565;
+	background: #effaeb;
+}
+
+#disqus_thread {
+	color: #2b2b2b;
+	background: #ECEBD9;
+}
+
+
+/* To demonstrate user dark mode */
+#Dark body {
+	--primary-color: #f6f4ec;
+	--secondary-color: #14172b;
+}
+
+#Dark body {
+	color: #f7f7f7;
+	background: #3b3b3f;
+}
+
+#Dark h1 {
+	color: #fffcc3;
+	background: #825757;
+}
+
+#Dark .check {
+	color: #fff;
+	background: #464646;
+}
+
+#Dark .btn {
+	background: #2b2b2b;
+	color: #ffffda;
+}
+
+#Dark #CmtBox,
+#Dark #disqus_thread {
+	color: #ECEBD9;
+	background: #444;
+}
+
+#Dark a {
+	color: yellow;
+}
+
+
+/* To demonstrate system dark mode */
+/* Same as previous group but all within medis query and all #Dark replaced by #Pdark */
+@media (prefers-color-scheme: dark) {
+	#Pdark body {
+		--primary-color: #f6f4ec;
+		--secondary-color: #14172b;
+	}
+
+	#Pdark body {
+		color: #f7f7f7;
+		background: #3b3b3f;
+	}
+
+	#Pdark h1 {
+		color: #fffcc3;
+		background: #825757;
+	}
+
+	#Pdark .check {
+		color: #fff;
+		background: #464646;
+	}
+
+	#Pdark .btn {
+		background: #2b2b2b;
+		color: #ffffda;
+	}
+
+	#Pdark #CmtBox,
+	#Pdark #disqus_thread {
+		color: #ECEBD9;
+		background: #444;
+	}
+
+	#Pdark a {
+		color: yellow;
+	}
+}
