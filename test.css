@@ -1,0 +1,91 @@
+
+/* = Not showing some elements = */
+
+/* "Showing X comments" heading */
+#disqus_thread #dsq-content h3,
+
+/* "Sort by..." select input */						
+#disqus_thread #dsq-content .dsq-item-sort,
+
+/* E-mail subsription icon */
+#disqus_thread #dsq-content .dsq-subscribe-email img,
+
+/* RSS subsription icon */										
+#disqus_thread #dsq-content .dsq-subscribe-rs img,
+
+/* Hide thread icon */
+#disqus_thread #dsq-content .dsq-full-comment .dsq-comment-hide-thread,
+
+/* Like comment icon  */
+#disqus_thread #dsq-content .dsq-comment-footer-right .dsq-like,
+
+/* Trackback URL */
+#disqus_thread #dsq-content .dsq-item-trackback
+  { display: none; }
+
+
+
+/* = Simpler look and feel = */
+
+/* "Comments are not allowed" and other messages  */
+
+#disqus_thread #dsq-content .dsq-remove-message, 
+#disqus_thread #dsq-content .dsq-realtime-alert, 
+#disqus_thread #dsq-content .dsq-missing-permissions p {
+	border: 0;
+	background-color: #eee;
+	color: #666;
+	padding: 10px 10px;
+	margin-bottom: 1.5em;
+}
+
+/* Repair toolbar dropdown z-index */
+
+#disqus_thread #dsq-content #dsq-toolbar-dropdown {
+	z-index: 100;
+}
+
+/* E-mail and RSS subscription anchors */
+
+#dsq-content .dsq-options {
+	padding-bottom: 5px;
+	background-color: #f8f8f8;
+	padding: 10px 10px 7px;
+	margin-bottom: 1.5em;
+}
+
+#disqus_thread #dsq-content .dsq-options .dsq-subscribe-email {
+  margin-left: -5px;
+}
+
+/* E-mail and RSS subscription anchors */
+
+#disqus_thread #dsq-content .dsq-options .dsq-subscribe-email {
+  margin-left: -5px;
+}
+
+/* Comment header */
+
+#disqus_thread #dsq-content .dsq-comment-header {
+	border: 0;
+	background-image: none;
+	border-bottom: 2px solid #ccc;
+	padding: 10px 5px 5px;
+	-moz-border-radius: 0; /* [OBSOLETE] in FF4 */
+	border-radius: 0;
+}
+
+/* Moderator's comment header */
+
+#disqus_thread #dsq-content .dsq-moderator .dsq-comment-header {
+	background-color: #f8f8f8;
+}
+
+/* Anchor hover color 
+   NOTE: use your own anchor hover color 
+*/
+
+#disqus_thread #dsq-content a:hover,
+#disqus_thread #dsq-content a:active {
+	color: #2f510b;
+}

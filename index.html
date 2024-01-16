@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
 
 </html>
 <meta charset="utf-8">
@@ -7,7 +7,7 @@
 <script>/* if javascript enabled add on the hasJS class*/ document.documentElement.className = "hasJS";</script>
 <script>
 	var disqus_config = function () {
-		this.page.url ="https//primusr.github.io/disqus";
+		this.page.url = "https//primusr.github.io/disqus";
 		this.page.identifier = 'UCCITCS2024';
 		this.page.title = "Student's Lounge";
 	};
@@ -35,31 +35,35 @@
 		}
 	}
 
+	
+
 	SetTheme(); // run the setup function
 </script>
 
 </head>
 
 <body>
+	<div class="container">
+		<h3>Announcements/Discussion Board</h3>
+	
+		<div id="disqus_thread">&nbsp;</div>
 
-	<h3>Announcements/Discussion Board</h3>
-
-			<div id="disqus_thread">&nbsp;</div>
 
 
+		<script>
 
-			<script>
-								
-				(function() { // DON'T EDIT BELOW THIS LINE
+			(function () { // DON'T EDIT BELOW THIS LINE
 				var d = document, s = d.createElement('script');
 				s.src = 'https://citcs-lounge.disqus.com/embed.js';
 				s.setAttribute('data-timestamp', +new Date());
 				(d.head || d.body).appendChild(s);
-				})();
-			</script>
-			
+			})();
+		</script>
+	</div>
 
 	<script src="dark-mode-demo-disqus.js"></script>
+	
+
 
 </body>
 
